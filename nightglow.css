@@ -1,0 +1,471 @@
+/*COMMON Styles __________________________________________________________________________________*/
+.sidepanel  {
+  background-color: rgb(40, 52, 59);
+  box-shadow: 5px 0px 30px rgba(255, 255, 255, 0.096),5px 0px 100px rgba(255, 255, 255, 0.274);
+}
+
+.sidepanel a {
+    color: #ffffff; 
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.openbtn {
+  background-color: #111;
+  color: white;
+}
+.openbtn:hover {
+  background-color:#444;
+}
+
+#navbar a {
+  color: #f2f2f2;
+  /* Dark
+  color: #f2f2f2;
+   */
+}
+
+#navbar a.active {
+  color: rgb(0, 80, 133);
+  /* Dark
+  background-color: rgba(76, 175, 79, 0);
+  color: rgb(0, 80, 133);
+   */
+}
+
+#navbar a.tab {
+  color: #ffffff;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.747);  
+  /* Dark
+  
+   */
+  /* color:rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(0, 140, 255), 0px 0px 30px rgba(0, 140, 255, 0.767), 0px 0px 50px rgba(0, 140, 255, 0.479); */
+}
+
+#navbar a.tab:hover {
+  color:rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 30px rgba(255, 251, 214, 0.767), 0px 0px 50px rgba(255, 253, 220, 0.479);
+  background-color: rgba(17, 17, 17, 0.09);
+  /* Dark
+    color:rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 30px rgba(255, 251, 214, 0.767), 0px 0px 50px rgba(255, 253, 220, 0.479);
+  background-color: rgba(17, 17, 17, 0.09);
+   */
+  /* color: #53a3ff;
+  text-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 30px rgba(255, 255, 255, 0.842), 0px 0px 50px rgba(255, 255, 255, 0.589); */
+}
+
+#darkthemebutton, #lightthemebutton {
+  transition: all 1s;
+}
+
+#navbar a.tab:active {
+  background-color: rgba(17, 17, 17, 0.13);
+  /* Dark
+  
+   */
+}
+
+#menu {
+  color:rgb(0, 66, 141);
+  text-shadow: 0px -19px 5px rgba(0, 0, 99, 0.301);
+  /* Dark
+  color:rgb(253, 253, 253);
+  text-shadow: 0px -19px 5px rgba(0, 0, 99, 0.301);
+   */
+}
+
+button {
+  color:rgb(0, 0, 0);
+  text-shadow: 0px 0px 2px rgba(253, 253, 255, 0.596);
+  background-color: rgba(255, 255, 255, 0);
+  /* Dark
+  background-color: rgba(76, 175, 79, 0);
+  color:rgb(255, 255, 255);
+  text-shadow: 0px 0px 2px rgba(0, 0, 255, 0.596);
+  background-color: rgba(255, 255, 255, 0); 
+   */
+}
+
+button:hover {
+  background-color: rgb(0, 92, 167);
+  color: white;
+  text-shadow: 2px 2px 16px rgba(0, 0, 0, 0);
+  /* Dark
+  background-color: rgb(0, 72, 121);
+  color: white;
+  text-shadow: 2px 2px 16px rgb(255, 255, 255);
+   */
+}
+
+#footer {
+  background-image: linear-gradient(to top,rgb(50, 73, 112), rgba(172, 172, 172, 0.671));
+  box-shadow: 0px -10px 30px rgba(255, 255, 255, 0),0px -10px 100px rgba(255, 255, 255, 0.685);
+  /* Dark
+  
+   */
+}
+
+#themes {
+  color: black;
+  /* Dark
+  color: white;
+   */
+}
+
+.h, #cvh {  
+  color:rgb(255, 255, 255);
+  text-shadow: 0px 0px 20px rgb(255, 255, 255),0px 0px 50px rgb(150, 150, 150);
+  /* Dark
+  color:rgb(255, 255, 255);
+  text-shadow: 0px 0px 20px rgb(255, 255, 255),0px 0px 50px rgb(150, 150, 150);
+   */
+}
+
+/* 
+Dark
+#login, #signup {
+  border-color: 4px solid rgb(0, 0, 0);
+  background-color: rgba(14, 126, 255, 0);
+  color:rgb(0, 0, 0);
+  text-shadow: 0px 0px 1px rgb(255, 255, 255);
+}
+
+#login:hover, #signup:hover {
+  color:rgb(255, 255, 255);
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.089);
+}
+*/
+
+
+
+
+/*HOME PAGE Styles _______________________________________________________________________________*/
+
+#home{
+  background-color: transparent;
+}
+
+#home::before{
+  background-image: url("picture1_sky.jpg");
+  opacity: 0.125;
+}
+
+
+body.homepage {
+  color:rgb(255, 255, 255) ;
+  background-image: linear-gradient(to bottom, rgb(21, 70, 99), rgb(41, 0, 0), rgb(36, 34, 100));
+}
+
+#sky {
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+#greet {
+  color: rgb(196, 186, 168);
+  text-shadow: 0px 0px 5px rgb(196, 186, 168);
+}
+
+#datetime{
+  color: white;
+  background-color: rgb(102, 127, 160);
+  text-shadow: 0px 0px 3px rgba(0, 21, 41, 0);
+}
+
+#reloadclock {
+  color: beige;
+  /* Dark
+  background-color: rgba(0, 0, 0, 0);
+  color: beige;
+   */
+}
+#reloadclock:hover {
+  background-color: transparent;
+  /* Dark
+  background-color: transparent;
+   */
+}
+
+#iam {
+color: rgb(196, 186, 168);
+/* text-shadow: 0px 0px 5px rgb(199, 199, 199); */
+}
+
+#name {
+  color:rgb(169, 203, 231);
+  text-shadow: 0px 0px 5px rgb(169, 203, 231);
+}
+#title {
+  color:rgb(204, 105, 105);
+  text-shadow: 0px 0px 5px rgb(172, 61, 61);
+}
+
+#linkgroup {
+  padding-top: 5%;
+  padding-bottom: 1%;
+  font-size: 109%;
+  color: rgb(196, 186, 168);
+  font-style:normal;
+  font-weight:normal;
+  font-family:'Play';
+}
+#linkgroup a {
+  text-decoration: none;
+  color: inherit;
+}
+#linkgroup a:hover{
+  color: white;
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+#github   { color: rgb(196, 186, 168); }
+#linkedin { color: rgba(125, 197, 255, 0.856); }
+#email    { color: #ff8a7bd5;               }
+#mobile   { color: #b6b5ffd3;               }
+#youtube  { color: #ff9797d8;               }
+
+#github:hover   { color: rgb(0, 0, 0);      }
+#linkedin:hover { color: rgb(0, 140, 255);  }
+#email:hover    { color: #ff1e00;           }
+#mobile:hover   { color: #0077ff;           }
+#youtube:hover  { color: #ff0000;           }
+
+#github:hover, #linkedin:hover, #email:hover, #mobile:hover, #youtube:hover {
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.76), 0px 0px 10px rgba(255, 255, 255, 0.568), 0px 0px 20px rgba(255, 255, 255, 0.541);
+}
+
+.logo:hover {
+background-color: transparent;
+
+}
+
+.menu {
+  background: rgba(0, 92, 167, 0.274);
+}
+
+
+
+h1.line {
+  color: rgb(99, 94, 82);
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+  /* Dark
+  
+   */
+}
+
+#contents {
+  background-color: rgba(0, 0, 0, 0);
+  /* Dark
+  background-color: rgba(0, 0, 0, 0.541);
+   */
+}
+
+address{
+  color:black;
+  /* Dark
+  
+   */
+}
+
+#navbar {
+  background-image : linear-gradient(to right,  rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.253),  rgba(255, 255, 255, 0.13));
+  box-shadow : 0px 10px 30px rgba(255, 255, 255, 0),0px 10px 100px rgba(255, 255, 255, 0.685);
+}
+
+footer {
+/* background-color:rgba(255, 255, 255, 0.705); */
+background-image : linear-gradient(to right,  rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.201), rgba(255, 255, 255, 0.05));
+box-shadow : 0px -10px 30px rgba(255, 255, 255, 0.05),0px -10px 100px rgba(255, 255, 255, 0.201);
+/* Dark
+
+ */
+}
+
+/* Dark
+ .menu-bar a {
+  background-color: rgba(255, 255, 255, 0.137);
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.342),0px 0px 50px rgba(150, 150, 150, 0.274);
+}
+
+.menu-bar a:hover {
+  color: white;
+  background-color: rgb(0, 92, 167);
+  text-shadow: 0px 0px 20px rgb(255, 255, 255),0px 0px 50px rgb(150, 150, 150);
+}
+
+.menu, .login, .signup {
+  background-color: rgb(255, 255, 255);
+}
+
+
+#about {
+  background-color: rgba(0, 29, 56, 0.651);
+}
+*/
+
+/*CV Page Style _______________________________________________________________________________*/
+
+#navbar_cv {
+  background-image: linear-gradient(to right, rgba(253, 252, 252, 0.589), rgba(175, 175, 175, 0.575), rgba(175, 175, 175, 0.575), rgba(255, 255, 255, 0.589));
+  box-shadow: 0px 10px 30px rgba(255, 255, 255, 0),0px 10px 100px rgba(255, 255, 255, 0.685);
+}
+
+#navbar_cv a {
+  color: #f2f2f2;
+}
+
+#navbar_cv a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar_cv a.active {
+  background-color: rgba(76, 175, 79, 0);
+  color: rgb(0, 80, 133);
+}
+
+
+.cv_body {
+  background-image: linear-gradient(to bottom,rgb(41, 50, 65), rgb(0, 0, 0));
+}
+
+.cvleft {
+  background: rgba(0, 45, 104, 0.24);
+}
+
+.cvright{
+  background: rgba(0, 0, 0, 0.24);
+}
+  
+#cv_name{
+  color:rgb(255, 255, 255);
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.267);
+}
+#cv_title{
+  color: #fff9aa;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.267);
+}
+
+
+h2 {
+  color:rgb(0, 89, 255);
+}
+
+h3 {
+  color:rgb(255, 255, 255);
+}
+
+h4 {
+  color:rgb(212, 212, 212);
+}
+
+h5{
+  color:rgb(155, 155, 155);
+}
+
+.h5_left {
+  color:rgb(155, 155, 155);
+}
+
+.skill_i {
+  color:white;
+}
+
+li {
+  text-align: left;
+}
+
+
+#footer {
+  background-image: linear-gradient(to right, rgba(253, 252, 252, 0.589), rgba(175, 175, 175, 0.575), rgba(175, 175, 175, 0.575), rgba(255, 255, 255, 0.589));
+  box-shadow: 0px -10px 30px rgba(255, 255, 255, 0),0px -10px 100px rgba(255, 255, 255, 0.685);
+}
+
+#a_footer {
+  color:rgb(255, 255, 255);
+  text-shadow: 0px 0px 20px rgb(255, 255, 255),0px 0px 50px rgb(255, 255, 255);
+}
+
+
+
+
+/* desktop view */
+@media (min-width: 1500px) {
+	#navbar a.active {
+		display: none;
+    /* Dark
+    
+     */
+	}
+
+}
+
+/* mobile view */
+@media (max-width: 720px) {
+  #photos{
+    box-shadow: 0px 0px 2px rgb(255, 255, 255), 0px 0px 5px rgba(254, 255, 255, 0.822), 0px 0px 20px rrgba(255, 255, 255, 0.493)
+    /* Dark
+    
+     */
+  }
+}
+
+
+/* IMAGE SLIDER */
+
+/* Next & previous buttons */
+.prev,
+.next {
+  color: white;
+  /* Dark
+  
+   */
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Dark
+  
+   */
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  /* Dark
+  
+   */
+}
+
+/* Container for image text */
+.caption-container {
+  background-image : linear-gradient(to right,  rgba(255, 255, 255, 0.111), rgba(255, 255, 255, 0.200),  rgba(255, 255, 255,  0.111));
+  box-shadow : 0px 10px 10px rgba(255, 255, 255, 0.014),0px 10px 80px rgba(255, 255, 255, 0.200);
+  /* Dark
+  
+   */
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  /* Dark
+  
+   */
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+  /* Dark
+  
+   */
+}

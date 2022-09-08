@@ -1,0 +1,535 @@
+/**
+ * Copyright 2021 ihthe.DESKTOP-GLMIQTA
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+ * {
+    box-sizing: border-box;
+  }
+
+ .sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.1s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel a {
+    text-decoration: none;
+    display: block;
+    transition: 0.1s;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    font-size: 25px;
+    padding: 10px 0px 8px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    width:8%;
+  }
+  
+  #navbar {
+    bottom: 0%;
+    width: 100%;
+    height: 50px;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 17px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #navbar a.active {
+    font-size: 25px;
+  }
+  
+  #navbar a.tab {
+    margin-top: 10px;
+    width: 140px;
+    font-weight:500;
+    background: none;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  #navbar .navcontents a {
+    transition: opacity 1s;
+  }
+
+  .navcontent {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .navcontent {
+    padding-top: 60px;
+  }
+  
+  #menu {
+    font-style:bold;
+    padding-right:0px;
+  }
+  
+  button {
+    border: none;
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Iceland', Courier, monospace;
+    -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+    cursor: pointer;
+    width: 100%;
+    
+  }
+  
+  #footer {
+    width:100%;
+    float:left;
+  }
+  
+  .h, #cvh {
+    text-decoration: none;  
+    font-size: 30px;
+  }
+  
+  /*HOME PAGE Styles _______________________________________________________________________________*/
+  
+  #github, #linkedin, #email, #mobile, #youtube {
+    padding: 2%;
+  }
+  
+  #home{
+    position: relative;
+  
+  }
+  #home::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-image: url("picture1_sky.jpg");
+    background-position: top center;
+    background-size: cover;
+    opacity: 0.125;
+    z-index: 0;
+  }
+  
+  #home h3{
+    position: relative;
+  }
+  
+  body.homepage {
+    vertical-align: middle;
+    margin: 0%;
+    text-align: center;
+    font-family: 'Iceland', zekton rg, Calibri, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  div.navcontainer div.navcontents {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
+  
+  #sky {
+    font-style: normal;
+    font-size: 25px;
+  }
+  
+  #greet {
+    font-size: 30px;
+    align-content: center;
+  }
+  
+  #datetime{
+    visibility: hidden;
+    font-size:25px;
+    font-style:bold;
+  }
+  
+  #reloadclock {
+    visibility: hidden;
+    font-size:24px;
+    width:10px;
+  }
+  
+  #avatar {
+    width:240px;
+    border-radius: 50%;
+  }
+  
+  #name {
+    font-size:70.1px;
+    font-style: bolder;
+    font-family:'Iceland';
+    margin: 1.6%;
+    text-align: center;
+  }
+  
+  #title {
+    font-family:'Play';
+    font-size: 148%;
+  }
+  
+  h1.line {
+    font-size: 30px;
+  }
+  
+  #contents {
+    float: left;
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  
+  address{
+    font-style: normal;
+  }
+  
+  #n1, #n2, #operators{
+    font-size:30px;
+    padding: 0px 10px;
+    margin: 10px 2px;
+    outline: none;
+  }
+  
+  #equal, #result {
+    font-size:40px;
+  } 
+  
+  #about {
+    font-family: 'Iceland', Courier, monospace;
+    font-size:30px;
+    float: left;
+    width:100%;
+    position: relative;
+  }
+  #aboutme{
+    position: relative;
+    width: 50%;
+    float: left;
+    padding: 5%;
+  }
+  
+  #photos{
+    position: relative;
+    width: 50%;
+    float: left;
+    padding: 5%;
+  }
+  
+  table {
+    font-size:1.5vw;
+  }
+  
+  tr{
+    height: 200px;
+  }
+  td{
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+ 
+   
+/*CV Page Style _______________________________________________________________________________*/
+
+/* #navbar_cv {
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  float: left;
+}
+
+#navbar_cv a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar_cv a.active {
+  font-size: 25px;
+}
+
+.cv_body {
+  text-align:center;
+  margin: 0%;
+  font-family:'Iceland';
+}
+
+.cv {
+  width:100%;
+  height: 1500px;
+  padding-top: 55px;
+  padding-bottom: 30px;
+}
+
+.cvleft {
+  padding-top:30px ;
+  width:25%;
+  float: left;
+  height: 100%;
+}
+
+.cvright{
+  padding-top:30px ;
+  width:75%;
+  text-align: left;
+  height: 100%;
+  float: left;      
+}
+  
+#cv_name{
+  font-size:60px;
+  padding: 30px 30px;   
+}
+
+#cv_title{
+  font-size: 32px;
+}
+
+
+h2 {
+  margin: 10px 20px;
+  size:40px;
+  font-style: bold;
+}
+
+h3 {
+  margin: 10px 20px;
+  size:32px;
+}
+
+h4 {
+  margin: 10px 20px;
+  size: 28px;
+}
+
+.cvh5{
+  margin: 10px 20px;
+  font-size:25px
+}
+
+.h5_left {
+  margin: 10px 20px;
+  font-size:20px;
+}
+
+meter{
+  margin: 10px 20px;
+  text-align: left;
+  width:150px;
+  height: 20px;
+  margin: 10px 20px;
+  margin: 10px 20px;
+
+}
+
+.skill_i {
+  outline: none;
+  font-size:20px;
+}
+
+
+li {
+  text-align: left;
+}
+
+#footer {
+  width:100%;
+  height: 48px;
+  float:left;
+}
+
+#a_footer {
+  text-decoration: none;   
+  font-size: 30px;
+} */
+  
+  
+  
+  
+  
+  /* desktop view */
+  @media (min-width: 1500px) {
+      #navbar a.active {
+          display: none;
+      }
+  
+  }
+  
+  /* mobile view */
+  @media (max-width: 720px) {
+  
+      #navbar a.tab  {
+          display: none;
+      }
+    #name {
+      text-align: center;
+     }
+     #fname {
+      font-size:80px;
+   }
+   #midname {
+    display: none;
+  }
+     #lname {
+      font-size:px;
+     }
+     #title {
+      font-size:20px;
+     }
+     #aboutme{
+      width: 100%;
+      padding: 2%;
+    }
+    #photos{
+      width: 100%;
+      float: unset;
+      padding: 2%;
+    }
+    table {
+      font-size:3vw;
+    }
+    
+    tr{
+      height: 150px;
+    }   
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* IMAGE SLIDER */
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .photocontainer {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    padding: 2px 16px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }

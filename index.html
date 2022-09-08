@@ -1,0 +1,363 @@
+<!DOCTYPE HTML>
+<html style="scroll-behavior: smooth;">
+
+<head>
+    <!--PRIMARY THEME-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="daylight.css">
+    <!--SCRIPT-->
+    <script src="script.js"></script>
+
+    <!--INFO-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Ihtheram Ahmod Chowdhury's Personal Blog">
+    <meta name="keywords"
+        content="Ihtheram Chowdhury, Ihtheramsblog, Ihtheram's blog, Ihtheram Chowdhury's blog, Ihtheram Chowdhury's Personal Blog">
+    <meta name="author" content="Ihtheram Ahmod Chowdhury">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    <meta http-equiv="refresh" content="1">   -->
+
+    <!--WEB-FONTS-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Audiowide|Faster+One|Hanalei+Fill|Iceland|Josefin+Sans|Play|Racing+Sans+One|Wallpoet|Electrolize&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>
+        Ihtheram Ahmod Chowdhury
+    </title>
+    <!--ICON FOR TITLE-->
+    <link rel="icon" type="image/png" href="tsi.png">
+</head>
+
+
+<body class="homepage" style="vertical-align: middle;">
+
+    <!--HOME\________________________________________________________________-->
+    <div id="home" class="container" style="position: relative; height: 100vh;">
+        <div class="contents" style="padding-top: 50px;">
+            <i id="sky"></i>
+            <i id="greet"></i>
+            <script>
+                timeofDay_Home();
+            </script>
+            </br></br>
+            <i id="datetime"></i>
+            <script>
+                const d = new Date();
+                document.getElementById("datetime").innerHTML = d.toUTCString();
+            </script>
+
+            <!--CLOCK RELOAD BUTTON-->
+            <button id="reloadclock" onclick="document.getElementById('datetime').innerHTML= new Date().toUTCString();">
+                <i style="font-size:18px;color:beige; text-shadow: 2px 2px 5px rgb(0, 0, 66);"
+                    class="fa fa-refresh"></i>
+            </button>
+            </br>
+            <img id="avatar" src="image1.jpg" alt="My Image"></img>
+            <h2 id="iam">
+                I am
+            </h2>
+            <h1 id="name">
+                <span id="fname">Ihtheram </span> <span id="midname">Ahmod</span><span id="lname"> Chowdhury</span>
+            </h1>
+            <h2 id="title">WEB DESIGNER, B.SC. GRADUAND IN COMPUTER SCIENCE & ENGINEERING</h2>
+            <!-- <h2 id="title" style="font-family:'Play'; font-size: 170%;">Web Designer, B.Sc. Graduand in Computer Science & Engineering</h2> -->
+
+            <h3 id="linkgroup">
+                <a href="#aboutme"> ABOUT ME </a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#photos"> MY PROJECTS
+                </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="https://docs.google.com/document/d/1YhazvgXwwsrSZ6ADi9daPJ2mqfD8H9xj6wbpFoViHDw/edit?usp=sharing"> MY CV
+                </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#contact"> CONTACT ME </a>
+            </h3>
+
+            <h3 style="padding: 5%; font-size: 155%">
+                <a id="linkedin" href="https://www.linkedin.com/in/ihtheram/" target="_blank"><i
+                        class="fa fa-linkedin"></i></a>
+                <a id="youtube" href="https://www.youtube.com/channel/UClMwuobdesjjYLUNCH5gu4A?view_as=subscriber"
+                    target="_blank"><i class="fa fa-youtube"></i></a>
+                <a id="github" href="https://github.com/ihtheram" target="_blank"><i class="fa fa-github"></i></a>
+                <a id="email" href="mailto: ihtheramchowdhury@gmail.com?subject = Feedback&body = Message"><i
+                        class="fa fa-at"></i></a>
+                <a id="mobile" href="tel: +8801907419299"><i class="fa fa-mobile"></i></a>
+            </h3>
+
+            <!-- <a class="mobile" onclick="myContactno();"><i class="fa fa-mobile"></i></a> -->
+            <!--DATE & TIME-->
+        </div>
+        <!--Fixed NAVIGATION BAR\________________________________-->
+        <div id="navbar" class="navcontainer" style="z-index: 3;">
+            <div class="navcontents">
+                <a id="menubutton" class="active" href="javascript:void(0)" onclick="openNav()">&#9776</a>
+
+                <a id="aboutbutton" class="tab" href="#aboutme"> About </a>
+                <a id="projectbutton" class="tab" href="#photos"> Projects </a>
+
+                <a id="darkthemebutton" class="tab fa fa-moon-o" style="background-color: transparent;" onclick="darkTheme_Home();"
+                    style="cursor: pointer;"></a>
+                <a id="homelink" style="visibility: visible; background-color:transparent; margin-left:50px; margin-right: 50px;"
+                    href="#home"><img src="tsi.png" width="60px"></a>
+                <a id="lightthemebutton" class="tab fa fa-sun-o" style="background-color: transparent;" onclick="lightTheme_Home();"
+                    style="cursor: pointer;"></a>
+                
+                <a id="resumebutton" class="tab" href="https://docs.google.com/document/d/1YhazvgXwwsrSZ6ADi9daPJ2mqfD8H9xj6wbpFoViHDw/edit?usp=sharing"> CV </a>
+                <a id="contactbutton" class="tab" href="#contact"> Contact </a>
+            </div>
+        </div>
+
+        <div id="mySidepanel" class="sidepanel" onmouseclick="closeNav()">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776</a>
+            <a id="cvlnk" href="cv.html"><button>My CV</button></a>
+            <a href="#about"><button>About</button></a>
+            <a href="#contact"><button>Contact</button></a>
+            <hr><i id="themes">THEMES</i></br>
+            <button onclick="timeTheme_Home();">Time of Day Theme</button>
+            <button onclick="lightTheme_Home()">Light Theme</button>
+            <button onclick="darkTheme_Home();">Dark Theme</button>
+        </div>
+    </div>
+    <!--________________________________________________________________/HEAD-->
+
+
+
+
+
+
+    <div id="cont">
+        <!--ABOUT\________________________________________________________________-->
+        <section id="about">
+            <!--rgb(0, 90, 163)-->
+            <div id="aboutme">
+            
+                <h2 class="h"><b>About me</b></h2></br>
+                <p style="text-align:justify;">
+                I am Ihtheram, studied B.Sc. in Computer Science and
+                Engineering in Metropolitan University. I dream to be a very excelled programmer and a computer
+                scientist and engineer. I do every task sincerely, consistently and I emphasize on quality more than
+                quantity. And I take time before every work for contemplation, planning and setting goals. </br></br>
+            </p>
+            
+            </div>
+
+            <div id="photos" class="photocontainer">
+                <h2 id="projects" class="h">MY Projects</h2>
+                <div class="mySlides">
+                    <div class="numbertext" style="position:relative;">1 / 1</div>
+                    <img src="techshelter.jpg" style="width:100%">
+                </div>
+
+                <!-- <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="" style="width:100%">
+                </div> -->
+
+                <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a> -->
+
+                <div class="caption-container">
+                    <p id="caption" style="color: white;"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        
+                        <img class="demo cursor" src="techshelter.jpg" style="width:100%" onclick="currentSlide(1)"
+                            alt="Techshelter Online Techstore <br /><a href='https://www.youtube.com/watch?v=l3WKJT9WawM' target='__balnk' style='color:white; font-size:15px'>Watch Presentation</a>">
+                    </div>
+                    <!-- <div class="column">
+                        <img class="demo cursor" src="techshelter.jpg" style="width:100%"
+                            onclick="currentSlide(2)" alt="Heaviest Fog">
+                    </div> -->
+
+                </div>
+            </div>
+
+
+        </section>
+        <!--________________________________________________________________/ABOUT-->
+
+        
+    </div>
+
+
+    <!--ABOUT\________________________________________________________________-->
+    <footer id="about" class="container">
+
+        <address id="contact" style="color:white">
+            <h3 class="h" style="font-style: normal; color: white;">Contact me</h3>
+
+            <table>
+                <tr>
+                    
+                    <td>
+                        <i class="fa fa-at"> Email</i> <br /> 
+                        <a href="mailto:ihtheramchowdhury@gmail.com" style="color:rgb(245, 242, 199)"> ihtheramchowdhury@gmail.com </a>
+                    </td>
+                    <td>
+                        <i class="fa fa-mobile"> Phone</i>  <br /> 
+                        <a id="mobile" href="tel: +8801907419299" style="color:rgb(245, 242, 199)"> +8801907419299</a> 
+                    </td>
+                </tr>
+               
+
+                <tr>
+                    
+                    <td>
+                        <i class="fa fa-linkedin"> LinkedIn</i> <br />
+                        <a href="https://www.linkedin.com/in/ihtheram/" target="_blank" style="color:rgb(245, 242, 199)"> https://www.linkedin.com/in/ihtheram/</a>
+                    </td>
+                    <td>
+                        <i class="fa fa-home"> Home address</i> <br />
+                        <a href="https://goo.gl/maps/ueodF4tr4ETbrTp39" target="_blank" style="color:rgb(245, 242, 199)"> 8C/Suraiya Tower, 2 Borobazar R/A road, Amberkhana, Sylhet, Bangladesh</a>
+                    </td>
+                </tr>
+
+            </table>
+        </address>
+
+
+    </footer>
+    <!--________________________________________________________________/ABOUT-->
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        window.onload = document.getElementById("navbar").style.position = "absolute";
+        window.onload = document.getElementById("navbar").style.backgroundImage = "";
+
+        const myNodelist = document.querySelectorAll("#navbar .navcontents a");
+        for (let i = 0; i < myNodelist.length; i++) {
+            if(myNodelist[i].id != "darkthemebutton" && myNodelist[i].id != "lightthemebutton" && myNodelist[i].id != "homelink"){
+                myNodelist[i].style.visibility = "hidden";
+                myNodelist[i].style.opacity = 0;
+            }
+        }
+        // window.onload = document.getElementById("homebutton").style.visibility = "hidden";
+        // window.onload = document.getElementById("aboutbutton").style.visibility = "hidden";
+        // window.onload = document.getElementById("photosbutton").style.visibility = "hidden";
+        // window.onload = document.getElementById("projectbutton").style.visibility = "hidden";
+        // window.onload = document.getElementById("resumebutton").style.visibility = "hidden";
+        // window.onload = document.getElementById("contactbutton").style.visibility = "hidden";
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+
+
+
+                document.getElementById("navbar").style.position = "";
+                // document.getElementById("navbar").style.backgroundImage = "linear-gradient(to right, rgba(255, 255, 255, 0.493), rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.493))";
+                // document.getElementById("navbar").style.boxShadow = "0px 10px 30px rgba(255, 255, 255, 0),0px 10px 100px rgba(255, 255, 255, 0.685)";
+
+            } else {
+                navbar.classList.remove("sticky");
+
+
+                const myNodelist = document.querySelectorAll("#navbar .navcontents a");
+                for (let i = 0; i < myNodelist.length; i++) {
+                    if(myNodelist[i].id != "darkthemebutton" && myNodelist[i].id != "lightthemebutton" && myNodelist[i].id != "homelink"){
+                        myNodelist[i].style.visibility = "hidden";
+                        myNodelist[i].style.opacity = 0;
+                    }
+                }
+
+                // document.getElementById("homebutton").style.visibility = "hidden";
+                // document.getElementById("aboutbutton").style.visibility = "hidden";
+                // document.getElementById("photosbutton").style.visibility = "hidden";
+                // document.getElementById("projectbutton").style.visibility = "hidden";
+                // document.getElementById("resumebutton").style.visibility = "hidden";
+                // document.getElementById("contactbutton").style.visibility = "hidden";
+
+
+                document.getElementById("navbar").style.position = "absolute";
+                // document.getElementById("navbar").style.backgroundImage = "";
+                // document.getElementById("navbar").style.boxShadow = "";
+            }
+
+
+            if (window.pageYOffset >= sticky - 245) {
+
+                const myNodelist = document.querySelectorAll("#navbar .navcontents a");
+                for (let i = 0; i < myNodelist.length; i++) {
+                    if(myNodelist[i].id != "darkthemebutton" && myNodelist[i].id != "lightthemebutton" && myNodelist[i].id != "homelink"){
+                        myNodelist[i].style.visibility = "visible";
+                        myNodelist[i].style.opacity = 100;
+                    }
+                }
+                // document.getElementById("homebutton").style.visibility = "visible";
+                // document.getElementById("aboutbutton").style.visibility = "visible";
+                // document.getElementById("photosbutton").style.visibility = "visible";
+                // document.getElementById("projectbutton").style.visibility = "visible";
+                // document.getElementById("resumebutton").style.visibility = "visible";
+                // document.getElementById("contactbutton").style.visibility = "visible";
+
+
+            }
+
+        }
+
+
+
+
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+        var autoslideIndex = 0;
+        autoshowSlides();
+
+        function autoshowSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            autoslideIndex++;
+            if (autoslideIndex > slides.length) { autoslideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[autoslideIndex - 1].style.display = "block";
+            dots[autoslideIndex - 1].className += " active";
+            captionText.innerHTML = dots[autoslideIndex - 1].alt;
+            setTimeout(autoshowSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
+
+</body>
+
+</html>
