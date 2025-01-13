@@ -1,3 +1,1 @@
-# Ihtheram's Personal Website
-
-Website URL- **https://ihtheram.github.io/**.
+# Islamic Foundation of New Jersey (Front end)
