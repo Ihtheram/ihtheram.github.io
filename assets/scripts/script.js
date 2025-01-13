@@ -185,10 +185,11 @@ function playAudio(file_path) {
     var label = document.getElementById('audio-label');
     var file_name = file_path.split('\\').pop().split('/').pop().replace(/_/g, ' ').replace(/(\d{2})-(\d{2})-(\d{2})/g, '$1/$2/$3');
 
+    var sticky_donate_button = document.getElementById('sticky-donate-button');
 
     container.style.display = "block";
     audio.style.display = "block";
-
+    sticky_donate_button.style.bottom = "204px";
     
     if ( file_name.length > label.clientWidth) {
         label.classList.add('marqueeLabel');
@@ -206,14 +207,15 @@ function playAudio(file_path) {
 function closePlayer() {
     var container = document.getElementById('audio-container')
     var audio = document.getElementById('audio');
+    var sticky_donate_button = document.getElementById('sticky-donate-button');
 
     audio.src = "";
     audio.load();
     audio.pause();
 
-
     audio.style.display = "none";
     container.style.display = "none";
+    sticky_donate_button.style.bottom = "82px";
 }
 
 

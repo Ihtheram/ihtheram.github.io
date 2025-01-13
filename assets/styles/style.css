@@ -54,7 +54,7 @@ header {
     height: fit-content;
 
     justify-content: space-between;
-    z-index: 5;
+    z-index: 1;
 
 }
 
@@ -447,7 +447,7 @@ address {
 #menu {
     display: none;
    
-    bottom: 72px;
+    bottom: 82px;
 
     opacity: 0;
     visibility: hidden;
@@ -678,7 +678,7 @@ td {
 
 #sticky-donate-button {
     position: fixed;
-    bottom: 70px;
+    bottom: 82px;
     right: 0px;
     width: 150px;
     background-color: rgba(255, 208, 0, 0);
@@ -705,17 +705,18 @@ td {
     z-index: 2;
     /* Sit on top */
     left: 0;
-    top: 100px;
-    width: 95vw;
-    height: 83vh;
-    margin-inline: 1vw;
+    top: 15px;
+    width: 98%;
+    height: 85vh;
+    margin-inline: 1%;
     overflow: visible;
     border-radius: 2vw;
+    z-index: 4;
 }
 
 #member-form {
-    width: 94vw;
-    height: 73vh;
+    width: 100%;
+    height: 83%;
     border: none;
     overflow: visible;
     background-color: #007889;
@@ -858,7 +859,7 @@ li ul {
     font-weight: 700;
     position: fixed;
 
-    bottom: 77px;
+    bottom: 82px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 4;
@@ -1188,9 +1189,10 @@ li ul {
     }
 
     .modal {
-        width: 95vw;
-        margin-inline: 2vw;
-
+        width: 70%;
+        margin-inline: 15%;
+        height: 95%;
+        
     }
 
     /* #member-form {
