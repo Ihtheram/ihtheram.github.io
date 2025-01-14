@@ -26,7 +26,6 @@ blockquote {
 }
 
 
-
 body {
     color: rgb(255, 248, 237);
     /* background: radial-gradient(circle, #44915b85, #2d8572); */
@@ -37,8 +36,22 @@ body {
     align-content: center;
     text-align: center;
     width: 100%;
+    z-index: 1;
 }
 
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/masjid_facade2.bmp');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+}
 
 header {
 
@@ -139,8 +152,8 @@ article section {
     height: 67vw;
     width: 100%;
     overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10vh rgba(255, 242, 222, 0.603);
+    border-radius: 4px;
+    box-shadow: 0px 0px 10vh rgba(255, 242, 222, 0.24);
     z-index: 0;
 }
 
@@ -152,7 +165,7 @@ article section {
 
     width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 4px;
 
     object-fit:contain;
 
@@ -174,13 +187,9 @@ article section {
 
     color: white;
     font-size: 2em;
-    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.178), rgba(255, 255, 255, 0));
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.178), transparent);
 
     padding: 15px 10px;
-    border-radius: 20px;
-    
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
     
     z-index: 1;
 }
@@ -228,28 +237,38 @@ h1 {
     font-size: 14px; /* Default size 13.28px */
 } h6 {
     font-size: 13px;  /* Default size 10.72px */
-} p {
-    font-size: 16px;  /* Default size 16px */
-} li {
+}
+p {
+    font-size: 18px; /* Default size 16px */
+}
+ul, li, th, td {
     font-size: 16px; /* Default size 16px */
 }
 
 small,
 time {
-    font-size: 12.8px;
+    font-size: 10.8px;
     /* Default size, based on 16px parent 12.8px */
 }
 
 blockquote,
 q {
-    font-size: 22px;
+    font-size: 18px; /* font-size: 22px; */
     margin: 15px;
 }
 
+.Ayat-al-Quran {
+    font-family: 'NeiriziRegular';
+    font-size: 22px;
+    quotes: none;
+}
+
 cite {
-    font-size: medium;
+    font-size: small;
     text-align: right;
 }
+
+
 
 h1,
 h2 {
@@ -279,7 +298,7 @@ h5,
 h6,
 p,
 li {
-    margin: 10px 2px;
+    margin: 15px 2px;
     color: rgb(247, 238, 225);
 }
 
@@ -447,7 +466,7 @@ address {
 #menu {
     display: none;
    
-    bottom: 82px;
+    bottom: 72px;
 
     opacity: 0;
     visibility: hidden;
@@ -524,9 +543,9 @@ address {
 }
 
 .ifnj-map {
-    margin-block: 15px;
-    width: 100%;
-    height: 70vh;
+    margin-block: 1%;
+    width: 98%;
+    height: 60vh;
     border-radius: 2vw;
 }
 
@@ -586,7 +605,7 @@ td {
 
 #iqamah th,
 #iqamah td {
-    font-size: 15px;
+    /* font-size: 15px; */
 }
 
 #prayer-page tr {
@@ -595,7 +614,7 @@ td {
 
 #prayer-page td,
 th {
-    font-size: 20px;
+    /* font-size: 20px; */
     padding-inline: 5px;
     width: 450px;
     height: 50px;
@@ -624,7 +643,6 @@ td {
 
 #about-page td {
     background-color: #ffffff00;
-    font-size: 18px;
     text-align: left;
     width: max-content;
     padding: 5px 15px;
@@ -642,9 +660,6 @@ td {
     float: left;
 }
 
-
-
-
 #ifnj-indoor-vertical {
     width: 25%;
     float: left;
@@ -659,12 +674,16 @@ td {
 }
 
 #programs-content {
-    width: 100%;
+    width: 98%;
     text-align: left;
-    padding: 17px;
+    margin-inline: 1%;
+    padding: 0px;
 }
 
-
+#programs-content section {
+    text-align: left;
+    padding: 20px; /* padding: 40px; */
+}
 
 
 #donate-page h1 {
@@ -678,7 +697,7 @@ td {
 
 #sticky-donate-button {
     position: fixed;
-    bottom: 82px;
+    bottom: 74px;
     right: 0px;
     width: 150px;
     background-color: rgba(255, 208, 0, 0);
@@ -751,21 +770,6 @@ td {
     flex-direction: column;
 }
 
-.bg-guestbook {
-    background-image: url('../images/bg_guestbook.png');
-    height: 66px;
-    width: 160px;
-
-    padding: 7px 3px;
-    /* border-radius: 15px; margin-block: 5px; margin-inline: auto; width:fit-content; height: fit-content; */
-
-    background-size: contain;
-    text-decoration: none;
-    color: #007889;
-    font-weight: 800;
-    font-size: large;
-}
-
 .btn-guestbook {
     border-radius: 15px;
     margin-block: 5px;
@@ -773,20 +777,11 @@ td {
     width: fit-content;
     height: fit-content;
     transition: width 0.5s ease, height 0.5s ease;
-}
-
-.btn-guestbook img {
-    height: 35vh;
-    width: auto;
-    transition: width 0.5s ease, height 0.5s ease;
+    background-position: center;
 }
 
 .btn-guestbook:hover {
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.637);
-}
-
-.btn-guestbook:hover img {
-    height: 36vh;
 }
 
 #sign-guestbook {
@@ -830,7 +825,7 @@ td {
 
 #programs-page li {
     /* color: rgb(69, 97, 112); */
-    font-size: 20px;
+    /* font-size: 16px; */
     border-radius: 50px;
 }
 
@@ -859,7 +854,7 @@ li ul {
     font-weight: 700;
     position: fixed;
 
-    bottom: 82px;
+    bottom: 72px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 4;
@@ -1176,17 +1171,25 @@ li ul {
 
     #programs-content {
         width: 75%;
+        margin: 0%;
         text-align: left;
         float: left;
-        padding-inline-end: 17px;
-        padding-top: 0%;
         margin-top: 0%;
     }
 
+    #programs-content section {
+        text-align: left;
+        padding: 40px;
+    }
 
     article {
         width: 100%;
     }
+
+    .ifnj-map {
+        height: 70vh;
+    }
+
 
     .modal {
         width: 70%;
@@ -1323,14 +1326,13 @@ li ul {
         font-size: 20px;
         /* Default size 16px */
     }
+ ul, li, th, td {
+    font-size: 20px; /* Default size 16px */
+}
     button {
         /* font-size: 14px; */
     }
 
-    li {
-        font-size: 16px;
-        /* Default size 16px */
-    }
     
     small,
     time {
@@ -1344,6 +1346,10 @@ li ul {
         margin: 15px;
     }
     
+    .Ayat-al-Quran {
+        font-size: 30px;
+    }
+
     cite {
         font-size: medium;
         text-align: right;

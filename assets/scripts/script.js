@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         currentIndex = (currentIndex + 1) % totalImages;
         images[currentIndex].classList.add('active');
         caption.innerHTML = captions[currentIndex];
-    }, 10000); // Change image and caption every 10 seconds
+    }, 5000); // Change image and caption every 10 seconds
     
     
 
@@ -151,6 +151,7 @@ function toggleContent(contentId) {
         contents[i].style.display = "none";
     }
     document.getElementById(contentId).style.display = "block";
+    window.scrollTo(0, 0);
 }
 
 function toggleContentAndJumpToSection(contentId, sectionId) {
@@ -189,7 +190,7 @@ function playAudio(file_path) {
 
     container.style.display = "block";
     audio.style.display = "block";
-    sticky_donate_button.style.bottom = "204px";
+    sticky_donate_button.style.bottom = "196px";
     
     if ( file_name.length > label.clientWidth) {
         label.classList.add('marqueeLabel');
@@ -215,7 +216,7 @@ function closePlayer() {
 
     audio.style.display = "none";
     container.style.display = "none";
-    sticky_donate_button.style.bottom = "82px";
+    sticky_donate_button.style.bottom = "74px";
 }
 
 
