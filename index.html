@@ -14,8 +14,9 @@
 	<script language="JavaScript" src="../scripts/ic_globals_published.js"></script>
 	<script language="JavaScript" src="scripts/user.js"></script>
 	<script language="JavaScript" src="scripts/photoalbum.js"></script>
+	
+	<script src="https://kit.fontawesome.com/6b51a92581.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
 	<title>Islamic Foundation of New Jersey - Official Homepage</title>
 	<link rel="icon" type="image/png" href="assets/images/icon.png">
@@ -40,36 +41,36 @@
 
 	<nav id="navbar" class="blur">
 		<button class="navbar-button" onclick="toggleContent('home-page')">
-			<span style="font-size: x-large;">⌂</span>
+			<span style="font-size: x-large;" class="fa-regular fa-house"></span>
 			<span class="button-title"> Home</span></button>
 	
 		<button class="navbar-button" onclick="toggleContent('programs-page')">
-			<span style="font-size: x-large;">🗓</span>
+			<span style="font-size: x-large;" class="fa-solid fa-calendar"></span>
 			<span class="button-title"> Activities</span></button>
 	
 		<button class="navbar-button" onclick="toggleContent('prayer-page')">
-			<span style="font-size: x-large;">◔</span>
+			<span style="font-size: x-large;" class="fa-solid fa-clock"></span>
 			<span class="button-title"> Iqamahs</span></button>
 	
 		<button class="navbar-button" onclick="toggleContent('donate-page')">
-			<span style="font-size: x-large;">$</span>
+			<span style="font-size: x-large;" class="fa-solid fa-hand-holding-dollar"></span>
 			<span class="button-title">Donate</span></button>
 	
 		<button class="navbar-button" onclick="toggleContent('map-page')">
-			<span style="font-size: x-large;">⚲</span>
+			<span style="font-size: x-large;" class="fa-solid fa-map"></span>
 			<span class="button-title"> Map</span></button>
 	
 		<button id="menu-button" class="navbar-button">
-			<span style="font-size: x-large;">≣</span>
+			<span style="font-size: x-large;" class="fa-solid fa-bars"></span>
 			<span class="button-title"> Menu</span></button>
 	</nav>
 
 	<div id="menu" class="blur">
-		<button class="menu-button" onclick="toggleContent('recordings-page')">🕪 Recordings</button>
-		<button class="menu-button" onclick="toggleContent('guestbook-page')">🕮 Guestbook</button>
-		<button class="menu-button" onclick="toggleContent('membership-page')">⨝ Membership</button>
-		<button class="menu-button" onclick="toggleContent('about-page')">🛈 About Us</button>
-		<button class="menu-button" onclick="toggleContent('contact-page')">🖁Contact Us</button>
+		<button class="menu-button" onclick="toggleContent('recordings-page')"><i class="fa-solid fa-volume-low"></i> Recordings</button>
+		<button class="menu-button" onclick="toggleContent('guestbook-page')"><i class="fa-solid fa-book"></i> Guestbook</button>
+		<button class="menu-button" onclick="toggleContent('membership-page')"><i class="fa-solid fa-people-group"></i> Membership</button>
+		<button class="menu-button" onclick="toggleContent('about-page')"><i class="fa-solid fa-circle-info"></i> About Us</button>
+		<button class="menu-button" onclick="toggleContent('contact-page')"><i class="fa-solid fa-address-book"></i> Contact Us</button>
 	</div>
 
 
@@ -78,16 +79,16 @@
 
 
 		<nav id="left-sidebar" class="blur">
-			<button onclick="toggleContent('home-page')">⌂ Home</button>
-			<button onclick="toggleContent('programs-page')">🗓 Activities</button>
-			<button onclick="toggleContent('prayer-page')">◔ Iqamah Times</button>
-			<button onclick="toggleContent('donate-page')">$ Donate</button>
-			<button onclick="toggleContent('map-page')">⚲ Location Map</button>
-			<button onclick="toggleContent('recordings-page')">🕪 Recordings</button>
-			<button onclick="toggleContent('guestbook-page')">🕮 Guestbook</button>
-			<button onclick="toggleContent('membership-page')">⨝ Membership</button>
-			<button onclick="toggleContent('about-page')">🛈 About Us</button>
-			<button onclick="toggleContent('contact-page')">🖁Contact Us</button>
+			<button onclick="toggleContent('home-page')"><span class="fa-regular fa-house"></span> Home</button>
+			<button onclick="toggleContent('programs-page')"><span class="fa-solid fa-calendar"></span>	Activities</button>
+			<button onclick="toggleContent('prayer-page')"><span class="fa-solid fa-clock"></span> Iqamah Times</button>
+			<button onclick="toggleContent('donate-page')"><span class="fa-solid fa-hand-holding-dollar"></span> Donate</button>
+			<button onclick="toggleContent('map-page')"><span class="fa-solid fa-map"></span> Location Map</button>
+			<button onclick="toggleContent('recordings-page')"><span class="fa-solid fa-volume-low"></span> Recordings</button>
+			<button onclick="toggleContent('guestbook-page')"><span class="fa-solid fa-book"></span> Guestbook</button>
+			<button onclick="toggleContent('membership-page')"><span class="fa-solid fa-people-group"></span> Membership</button>
+			<button onclick="toggleContent('about-page')"><span class="fa-solid fa-circle-info"></span> About Us</button>
+			<button onclick="toggleContent('contact-page')"><span class="fa-solid fa-address-book"></span> Contact Us</button>
 		</nav>
 
 
@@ -832,8 +833,8 @@
 				<h4>Paterson Jalalabad Jam-E Masjid</h4>
 				<address>61 Van Houten St, Paterson, NJ 07505</address>
 				<div style="margin: 10px;"><a href="#map-page" onclick="toggleContent('map-page')">Check map</a></div>
-				<span>Tel: </span><a href="tel:+19732796408"> +1(973) 279-6408</a><br>
-				<span>Email: </span><a href="mailto:info@ifnj.org">info@ifnj.org</a>
+				<span class="fa-solid fa-mobile"> Phone </span><a href="tel:+19732796408"> +1(973) 279-6408</a><br>
+				<span class="fa-solid fa-at"> Email: </span><a href="mailto:info@ifnj.org">info@ifnj.org</a>
 				</p>
 
 
@@ -1037,8 +1038,8 @@
 	<footer id="footer">
 		<h4>Islamic Foundation of New Jersey</h4>
 		<address>Paterson Jalalabad Jam-E Masjid <br> 61 Van Houten St, Paterson, NJ 07505</address>
-		<span>Tel: </span><a href="tel:+19732796408"> +1(973) 279-6408</a>
-		<span>Email: </span><a href="mailto:info@ifnj.org">info@ifnj.org</a>
+		<span class="fa-solid fa-mobile"> Phone: </span><a href="tel:+19732796408"> +1(973) 279-6408</a><br>
+		<span class="fa-solid fa-at"> Email: </span><a href="mailto:info@ifnj.org">info@ifnj.org</a><br>
 		<span>Website: </span><a href="http://www.ifnj.org/"
 			title="Islamic Foundation of New Jersey - Official Homepage">www.ifnj.org</a>
 
@@ -1046,7 +1047,7 @@
 	</footer>
 
 
-
+	<script type="text/javascript" src="https://example.com/fontawesome/v6.6.0/js/conflict-detection.js"></script>
 </body>
 
 </html>
