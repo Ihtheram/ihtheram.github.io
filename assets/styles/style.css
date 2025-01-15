@@ -396,8 +396,8 @@ address {
 
 .button {
     color: rgb(239, 229, 212);
-
     box-shadow: #00000026 0px 0px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.103);
     border-radius: 50px;
     cursor: pointer;
     text-decoration: none;
@@ -483,7 +483,7 @@ address {
     background-color: transparent;
     color: white;
     padding: 7px 7px;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.103);
     cursor: pointer;
     width: 100%;
     text-align: center;
@@ -746,7 +746,9 @@ td {
 #openBtn {
     display: none;
 }
-
+#openBtn_mobile {
+    display: inline;
+}
 
 /* The Close Button */
 .closeBtn {
@@ -920,6 +922,10 @@ li ul {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+button, .button, .btn {
+    border: 1px solid transparent;
 }
 
 
@@ -1275,6 +1281,9 @@ li ul {
 
     #openBtn {
         display:inline;
+    }
+    #openBtn_mobile {
+        display: none;
     }
 
     #mc_embed_signup {
