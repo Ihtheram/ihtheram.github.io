@@ -20,7 +20,7 @@ blockquote {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: Calibri,'Trebuchet MS', sans-serif, Arial, Helvetica, sans-serif;
     /* transition-duration: 0.5s; */
 
 }
@@ -29,7 +29,7 @@ blockquote {
 body {
     color: rgb(255, 248, 237);
     /* background: radial-gradient(circle, #44915b85, #2d8572); */
-    background: radial-gradient(circle, #44915b85, #2d8572);
+    background: radial-gradient(circle, #5d856985, #578279);
     display: flex;
     flex-direction: column;
     align-items: center;
