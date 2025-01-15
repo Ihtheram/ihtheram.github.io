@@ -190,7 +190,7 @@ function playAudio(file_path) {
 
     container.style.display = "block";
     audio.style.display = "block";
-    sticky_donate_button.style.bottom = "196px";
+    sticky_donate_button.style.bottom = "188px";
     
     if ( file_name.length > label.clientWidth) {
         label.classList.add('marqueeLabel');
@@ -216,46 +216,8 @@ function closePlayer() {
 
     audio.style.display = "none";
     container.style.display = "none";
-    sticky_donate_button.style.bottom = "74px";
+    sticky_donate_button.style.bottom = "66px";
 }
-
-
-// var audio = document.getElementById('audio');
-// var seekBar = document.getElementById('seek-bar');
-
-// audio.addEventListener('timeupdate', function () {
-//     var value = (audio.currentTime / audio.duration) * 100;
-//     seekBar.value = value;
-// });
-
-// function play() {
-//     audio.play();
-// }
-
-// function pauseAudio() {
-//     var audio = document.getElementById('audio');
-//     audio.pause();
-// }
-
-// function stopAudio() {
-//     audio.pause();
-//     audio.currentTime = 0;
-//     seekBar.value = 0;
-// }
-
-// function volumeUp() {
-//     if (audio.volume < 1) audio.volume += 0.1;
-// }
-
-// function volumeDown() {
-//     if (audio.volume > 0) audio.volume -= 0.1;
-// }
-
-// function seekAudio() {
-//     var seekTo = audio.duration * (seekBar.value / 100);
-//     audio.currentTime = seekTo;
-// }
-
 
 
   

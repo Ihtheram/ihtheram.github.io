@@ -438,6 +438,10 @@ address {
     aspect-ratio: 1/1;
 }
 
+#menu, #audio-container, #sticky-donate-button {
+    bottom: 66px;
+}
+
 #navbar, #menu {
     background-color: rgba(69, 97, 112, 0.733);
     box-shadow: 0px 0px 2px rgba(0, 33, 48, 0.788), 0px 0px 5px rgba(49, 69, 80, 0.623), 0px 0px 15px rgba(49, 69, 80, 0.171);
@@ -466,8 +470,6 @@ address {
 #menu {
     display: none;
    
-    bottom: 72px;
-
     opacity: 0;
     visibility: hidden;
 
@@ -507,12 +509,13 @@ address {
 
 
 .menu-button {
-    font-size: 20px;
+    font-size: 16px;
     width: 100%;
     /* padding: 15px 130px; */
     transition: 0.1s;
     border-radius: 50px;
     border: 1px solid rgba(255, 245, 227, 0);
+    padding: 10px;
 }
 
 .menu-button:hover,
@@ -697,7 +700,6 @@ td {
 
 #sticky-donate-button {
     position: fixed;
-    bottom: 74px;
     right: 0px;
     width: 150px;
     background-color: rgba(255, 208, 0, 0);
@@ -739,6 +741,10 @@ td {
     border: none;
     overflow: visible;
     background-color: #007889;
+}
+
+#openBtn {
+    display: none;
 }
 
 
@@ -854,7 +860,6 @@ li ul {
     font-weight: 700;
     position: fixed;
 
-    bottom: 72px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 4;
@@ -863,6 +868,8 @@ li ul {
 
     box-sizing: border-box;
 }
+
+
 
 #audio {
     width: 100%;
@@ -1264,6 +1271,10 @@ li ul {
         padding: 10px;
         vertical-align: middle;
         font-size: 20px;
+    }
+
+    #openBtn {
+        display:inline;
     }
 
     #mc_embed_signup {
