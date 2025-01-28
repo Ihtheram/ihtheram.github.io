@@ -74,8 +74,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let currentIndex = 0; const images = document.querySelectorAll('.hero img');
     const caption = document.getElementById('slogan');
     const captions = [
-        '<h2>Paterson Jalalabad Jam-E Masjid<br><address style="font-size:15px;">61 Van Houten St, Paterson, NJ 07505</address></h2>',
-        '<h2>Proposed Mosque Rehabilitation<br><address style="font-size:15px;">53-63 Van Houten St, Paterson, NJ 07505</address></h2>'
+        '<h2>Jalalabad Jam-E Masjid<br><address>61 Van Houten St, Paterson, NJ 07505</address></h2>',
+        '<h2>Proposed Mosque Rehabilitation<br><address>53-63 Van Houten St, Paterson, NJ 07505</address></h2>'
     ];
     const totalImages = images.length;
     setInterval(() => {

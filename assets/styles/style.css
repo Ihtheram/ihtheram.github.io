@@ -25,11 +25,7 @@ blockquote {
 
 }
 
-
 body {
-    color: rgb(255, 248, 237);
-    /* background: radial-gradient(circle, #44915b85, #2d8572); */
-    background: radial-gradient(circle, #5d856985, #578279);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +42,6 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/masjid_facade2.bmp');
     background-size: cover;
     background-position: center;
     filter: blur(10px);
@@ -54,15 +49,14 @@ body::before {
 }
 
 header {
-
+    
     place-items: center;
-    color: #66BB6A;
-    /* background-image: linear-gradient(to bottom, rgba(157, 194, 159, 0.404), rgba(157, 194, 159, 0)); */
 
     /* padding-block: 15px; */
     /* padding-inline: 5px; */
     font-size: 18px;
 
+    margin: 0%; padding: 0%;
     width: 100%;
     height: fit-content;
 
@@ -98,11 +92,7 @@ section {
 
 article section {
     margin: 10px 0;
-    background-color: rgba(0, 120, 137, 0.178);
-    box-shadow: 0px 0px 2px rgba(0, 90, 102, 0.185), 0px 1px 10px rgba(0, 60, 68, 0.116), 0px 1px 20px rgba(0, 63, 71, 0.068);
 }
-
-
 
 .flex-container {
     display: flex;
@@ -120,23 +110,14 @@ article section {
 
 /* Track of the scrollbar */
 ::-webkit-scrollbar-track {
-    background: #34695e; 
     /* #006a88; */
     border-radius: 10px;
 }
 
 /* Handle of the scrollbar */
 ::-webkit-scrollbar-thumb {
-    background: #65b684c2;
     border-radius: 10px;
 }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #65b684;
-}
-
-
 
 #left-sidebar,
 #right-sidebar {
@@ -152,8 +133,7 @@ article section {
     height: 67vw;
     width: 100%;
     overflow: hidden;
-    border-radius: 4px;
-    box-shadow: 0px 0px 10vh rgba(255, 242, 222, 0.24);
+    border-radius: 2vw;
     z-index: 0;
 }
 
@@ -165,7 +145,7 @@ article section {
 
     width: 100%;
     height: auto;
-    border-radius: 4px;
+    border-radius: 2vw;
 
     object-fit:contain;
 
@@ -180,24 +160,20 @@ article section {
 }
 
 .caption {
+    
     position: absolute;
     top: 0px;
     left: 50%;
     transform: translateX(-50%) translateY(0%);
-
-    color: white;
-    font-size: 2em;
-    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.178), transparent);
-
     padding: 15px 10px;
-    
     z-index: 1;
+}
+address {
+    font-size: small;
 }
 
 #footer {
-    background-color: rgb(39, 54, 63);
     width: 100%;
-    color: rgba(241, 232, 219, 0.726);
     padding: 50px;
     margin-top: 50px;
     padding-bottom: 100px;
@@ -207,13 +183,8 @@ article section {
 #footer address,
 #footer span,
 #footer a {
-    color: rgba(255, 248, 237, 0.596);
     font-size: 12px;
     padding-block: 5px;
-}
-
-#footer a {
-    color: rgba(160, 218, 255, 0.596);
 }
 
 h1,
@@ -282,15 +253,7 @@ h2 {
 h1 {
     margin: 15px 5px;
     padding: 15px 5px;
-    color: rgba(255, 245, 227, 0.863);
 }
-
-h2 {
-    color: rgba(255, 245, 227, 0.863);
-}
-
-
-
 
 h3,
 h4,
@@ -299,21 +262,11 @@ h6,
 p,
 li {
     margin: 15px 2px;
-    color: rgb(247, 238, 225);
 }
 
 blockquote,
 q {
-    color: rgb(255, 255, 255);
     font-weight: 600;
-}
-
-a {
-    color: rgb(213, 232, 255);
-}
-
-address {
-    color: rgb(234, 253, 255);
 }
 
 .text-input {
@@ -322,11 +275,8 @@ address {
     max-width: 400px;
     margin: 15px auto;
     padding: 5px;
-    border: 1px solid rgba(255, 245, 227, 0);
     border-radius: 20px;
-    background-color: #2d8572a9;
 
-    color: rgb(255, 245, 227);
     text-align: center;
     font-size: large;
     font-weight: 400;
@@ -334,28 +284,20 @@ address {
 }
 
 .text-input::placeholder {
-    color: rgba(255, 245, 227, 0.815);
     text-align: center;
     font-size: medium;
     font-weight:normal;
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* styling of the typed text in .text-input */
-.text-input:focus::placeholder {
-    color: rgba(255, 245, 227, 0.411);
-}
-
 .text-input:focus {
     outline: none;
-    border: 1px solid rgba(255, 255, 255, 0.863);
     font-size: medium;
 
     font-family: 'Times New Roman', Times, serif;
 }
 
 .page-heading {
-    background-image: radial-gradient(circle, rgba(144, 197, 158, 0.856), transparent);
     position: sticky;
     top: 0px;
 
@@ -369,35 +311,14 @@ address {
     z-index: 4;
 }
 
-
-.color-dark {
-    /* color: #007889; */
-    color: rgb(69, 97, 112);
-}
-
-.bg-dark {
-    /* color: #007889; */
-    background-color: rgba(69, 97, 112, 0.795);
-}
-
-.bg-green-button {
-    /* background-color: rgba(174, 221, 176, 0.596); */
-    background-color: rgba(156, 219, 170, 0.596);
-}
-
-.bg-blue-button {
-    background-color: rgba(0, 104, 117, 0.589);
-}
-
 .blur {
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
 }
 
 .button {
-    color: rgb(239, 229, 212);
-    box-shadow: #00000026 0px 0px 20px;
-    border: 1px solid rgba(0, 0, 0, 0.103);
+    border: 1px solid;
+
     border-radius: 50px;
     cursor: pointer;
     text-decoration: none;
@@ -405,14 +326,6 @@ address {
     font-size: 20px;
     padding: 10px 25px;
     margin: 5px 5px;
-}
-
-.button:hover {
-    /* background-color: #007889; */
-    background-color: rgb(69, 97, 112);
-    border: 1px solid rgba(255, 245, 227, 0.863);
-    color: rgba(255, 245, 227, 0.863);
-
 }
 
 .button-label {
@@ -426,10 +339,11 @@ address {
 }
 
 #logo {
-    width: 70px;
-    aspect-ratio: 1/1;
-    margin-block: 10px;
     display: fixed;
+    aspect-ratio: 1/1;
+    width: 70px;
+    margin-block: 15px 10px;
+    border-radius: 50%;
 }
 
 #navbar-logo {
@@ -443,9 +357,6 @@ address {
 }
 
 #navbar, #menu {
-    background-color: rgba(69, 97, 112, 0.733);
-    box-shadow: 0px 0px 2px rgba(0, 33, 48, 0.788), 0px 0px 5px rgba(49, 69, 80, 0.623), 0px 0px 15px rgba(49, 69, 80, 0.171);
-
     width: 98%;
     margin-inline: 1%;
     
@@ -454,7 +365,7 @@ address {
 }
 
 #navbar {
-    /* border: 1px solid rgba(255, 255, 255, 0.144); */
+    /* border: 1px solid; */
     display: flex;
     
     bottom: 5px;
@@ -464,7 +375,6 @@ address {
 
     /* margin-bottom: 5px; */
     height: auto;
-    
 }
 
 #menu {
@@ -480,14 +390,17 @@ address {
 .navbar-button,
 .menu-button,
 .btn {
-    background-color: transparent;
-    color: white;
     padding: 7px 7px;
-    border: 1px solid rgba(0, 0, 0, 0.103);
+    border: 1px solid;
     cursor: pointer;
     width: 100%;
     text-align: center;
     font-weight: 500;
+}
+
+.navbar-button, .menu-button {
+    border: 1px solid;
+    border-radius: 50px;
 }
 
 .navbar-button {
@@ -496,36 +409,15 @@ address {
     display: flex;
     /* width: 14.3%; */
     flex-direction: column;
-    border: 1px solid rgba(255, 245, 227, 0);
 }
-
-
-.navbar-button:hover {
-    border-radius: 50px;
-    border: 1px solid rgba(255, 245, 227, 0.863);
-    background-color: rgb(69, 97, 112);
-    color: rgba(255, 245, 227, 0.863);
-}
-
 
 .menu-button {
     font-size: 16px;
     width: 100%;
+    padding: 10px;
     /* padding: 15px 130px; */
     transition: 0.1s;
-    border-radius: 50px;
-    border: 1px solid rgba(255, 245, 227, 0);
-    padding: 10px;
 }
-
-.menu-button:hover,
-.navbar-button:hover {
-    border: 1px solid rgba(255, 245, 227, 0.863);
-    background-color: rgb(69, 97, 112);
-    color: rgb(255, 245, 227);
-
-}
-
 
 .button-title {
     font-size: xx-small;
@@ -555,7 +447,6 @@ address {
 
 /* #donate {
     width: fit-content;
-    background-image: url('../images/masjid_facade2.bmp');
     background-size: contain;
     border-radius: 5%;
     display: flex;
@@ -569,21 +460,15 @@ address {
     height: fit-content;
     /* -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px); */
-    background-color: rgba(119, 119, 119, 0.26);
     padding: 20px;
     margin-bottom: 5px;
-    color: white;
     border-radius: 50px;
-    box-shadow: #0000003b 0px -5px 20px;
 }
-
 
 table {
     padding: auto;
     width: 100%;
 }
-
-
 
 table caption {
     text-align: center;
@@ -594,16 +479,13 @@ table caption {
 
 tr {
     text-align: center;
-
 }
 
 th,
 td {
     padding: 5px;
     width: 50%;
-    border-radius: 10px;
-
-    background-color: #ffffff17;
+    border-radius: 2px;
 }
 
 #iqamah th,
@@ -642,10 +524,7 @@ td {
     max-width: 50vw;
 }
 
-
-
 #about-page td {
-    background-color: #ffffff00;
     text-align: left;
     width: max-content;
     padding: 5px 15px;
@@ -688,11 +567,9 @@ td {
     padding: 20px; /* padding: 40px; */
 }
 
-
 #donate-page h1 {
     padding: 15px 5px;
 }
-
 
 #donate-page p {
     padding: 15px 5px;
@@ -702,23 +579,18 @@ td {
     position: fixed;
     right: 0px;
     width: 150px;
-    background-color: rgba(255, 208, 0, 0);
     border-radius: 50px;
     padding: 0px 0px;
     margin: 0px;
 }
 
 #sticky-donate-button #paypal-image {
-    box-shadow: 0px 0px 15px rgba(255, 230, 0, 0.47);
     width: 100px;
     border-radius: 50px;
 }
 
-
-
 /* Membership Page styles */
 .modal {
-    background-color: #3B3B3B;
     display: none;
     /* Hidden by default */
     position: fixed;
@@ -740,7 +612,6 @@ td {
     height: 83%;
     border: none;
     overflow: visible;
-    background-color: #007889;
 }
 
 #openBtn {
@@ -754,21 +625,13 @@ td {
 .closeBtn {
     text-align: center;
     font-size: 28px;
-    color: #ffffff;
-    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.486);
-
-
     font-weight: bold;
-    background-color: rgba(255, 219, 219, 0);
     padding: 0px 5px;
-
 }
 
 .closeBtn:hover,
 .closeBtn:focus {
-    color: rgb(255, 0, 0);
     text-decoration: none;
-    text-shadow: 0px 0px 5px rgb(255, 0, 0);
     cursor: pointer;
 }
 
@@ -788,18 +651,6 @@ td {
     background-position: center;
 }
 
-.btn-guestbook:hover {
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.637);
-}
-
-#sign-guestbook {
-    background-image: url('../images/guestbook_signing.png');
-}
-
-#view-guestbook {
-    background-image: url('../images/guestbook.png');
-}
-
 #sign-guestbook,
 #view-guestbook,
 .content-w-bg {
@@ -810,16 +661,11 @@ td {
     margin: 2.5%;
     padding: auto;
     padding-block: 30%;
-
     font-family: 'Copperplate', 'Copperplate Gothic Light', 'Times New Roman';
     text-decoration: none;
     font-size: 50px;
     font-weight: 700;
     list-style-type: none;
-
-
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 5px #000000dc, 0px 0px 15px #00000093, 0px 0px 35px #0000005d;
 }
 
 #programs-page {
@@ -828,7 +674,6 @@ td {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
 }
 
 #programs-page li {
@@ -844,49 +689,33 @@ li ul {
     padding-bottom: 20px;
 }
 
-
-
 #audio-container {
-    /* width: 450px; */
-    width: 98%;
-    max-width: 500px;
-    padding: 20px;
-    /* background: radial-gradient(circle, #ffffff, #ffffff49); */
-    background-color: rgb(241, 243, 244);
-    border-radius: 50px;
-    border: 2px solid rgb(175, 149, 101);
-
-    /* background-color: #fffbe4; */
-    text-align: center;
-    color: rgb(175, 149, 101);
-    font-weight: 700;
+    display: none;
     position: fixed;
-
     left: 50%;
     transform: translateX(-50%);
     z-index: 4;
-
-    display: none;
-
     box-sizing: border-box;
+    /* width: 450px; */
+    width: 98%;
+    max-width: 500px;
+    
+    border: 2px solid;
+    border-radius: 50px;
+    padding: 20px;
+
+    text-align: center;
+    font-weight: 700;
 }
-
-
 
 #audio {
     width: 100%;
 }
 
 #audio-container span {
-    color: rgb(0, 0, 0);
     font-weight: 800;
     margin: 8px;
     text-shadow: none;
-}
-
-#audio-container span:hover {
-    color: red;
-    text-shadow: 0px 0px 5px red;
 }
 
 .audio-container button {
@@ -895,10 +724,6 @@ li ul {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.audio-container button:hover {
-    background-color: #ccc;
 }
 
 .seek-bar {
@@ -925,16 +750,14 @@ li ul {
 }
 
 button, .button, .btn {
-    border: 1px solid transparent;
+    border: 1px solid;
 }
 
-
+/* FOR DESKTOP */
 @media only screen and (min-width: 1280px) {
-
-
+  
     body {
         width: 100%;
-
     }
 
     header {
@@ -965,12 +788,10 @@ button, .button, .btn {
         display: flex;
         flex-direction: column;
 
-        /* background-color: rgba(137, 0, 0, 0); */
-        border: 1px solid rgba(255, 245, 227, 0);
+        border: 1px solid;
         border-radius: 30px;
         min-width: 10%;
         max-width: 15%;
-
 
         padding: 15px;
 
@@ -1013,20 +834,15 @@ button, .button, .btn {
         width: 100%;
         text-align: left;
         margin-left: 4px;
-        color: rgba(255, 255, 255, 0.842);
-        background-color: rgba(21, 217, 243, 0);
-        border: 1px solid rgba(255, 245, 227, 0);
+        border: 1px solid;
         padding: 15px 15px;
 
     }
 
     #left-sidebar button:hover {
         border-radius: 50px;
-        border: 1px solid rgba(255, 245, 227, 0.863);
-        /* background-color: rgb(69, 97, 112); */
-        color: rgba(255, 245, 227, 0.863);
+        border: 1px solid;
         cursor: pointer;
-
     }
 
     #right-sidebar h3, #right-sidebar p {
@@ -1046,8 +862,7 @@ button, .button, .btn {
 
     #navbar {
         display: none;
-        background-color: rgba(136, 196, 156, 0.788);
-        border: 2px solid rgba(177, 162, 116, 0);
+        border: 2px solid;
         border-radius: 30px;
 
         position: sticky;
@@ -1069,7 +884,6 @@ button, .button, .btn {
     } */
 
     .navbar-button {
-        color: #fffae1;
         display: flex;
         flex-direction: row;
         width: max-content;
@@ -1098,12 +912,10 @@ button, .button, .btn {
 
     #menu {
         /* position: absolute; */
-        background-color: rgba(156, 219, 170, 0.596);
         width: 600px;
         height: max-content;
         min-height: 100%;
         border-radius: 20px;
-
 
         position: sticky;
         justify-content: center;
@@ -1120,8 +932,7 @@ button, .button, .btn {
 
     #sidebar {
         display: block;
-        background-color: rgba(136, 196, 156, 0.788);
-        border: 2px solid rgba(177, 162, 116, 0);
+        border: 2px solid;
         border-radius: 30px;
 
         position: sticky;
@@ -1162,6 +973,9 @@ button, .button, .btn {
         border-radius: 0px;
         z-index: 1;
     }
+    address {
+        font-size: medium;
+    }
 
     .button-title {
         font-size: 20px;
@@ -1179,7 +993,6 @@ button, .button, .btn {
         float: left;
         padding-inline: 17px;
         display: flex;
-
     }
 
     #programs-content {
@@ -1379,8 +1192,6 @@ button, .button, .btn {
     #right-sidebar section {
         margin: 5px 0;
         padding: 15px 5px;
-        background-color: rgba(0, 120, 137, 0.178);
-        box-shadow: 0px 0px 2px rgba(0, 90, 102, 0.219), 0px 1px 10px rgba(0, 90, 102, 0.164), 1px 2px 20px rgba(0, 90, 102, 0.103);
     }
     
     #right-sidebar h3 {
@@ -1392,6 +1203,5 @@ button, .button, .btn {
     #right-sidebar h4 {
         font-size: 16px; /* Default size 16px */
     }
-
 
 }

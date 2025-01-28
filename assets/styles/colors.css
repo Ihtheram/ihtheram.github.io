@@ -1,0 +1,287 @@
+
+/* MOBILE BROWSER STYLING - COLOR THEME STYLING*/
+body {
+    /* Light Gray */
+    /* background-color: #c9c9c9; */
+
+    /* Gold A */
+    /* background-image: linear-gradient(to right, #735B49, rgba(173, 151, 104, 0.89), #c7b78a, rgba(173, 151, 104, 0.89),  #735B49); */
+
+    /* Gold B */
+    /* background: linear-gradient(135deg, #b3a06a 1%, #c4af74 5%, #b3a06a 10%,  #c4af74 15%, #b3a06a 20%, #c4af74 25%, #b3a06a 30%, #c4af74 35%, #b3a06a 40%, #c4af74 45%, #b3a06a 50%, #c4af74 55%, #b3a06a 60%, #c4af74 65%, #b3a06a 70%, #c4af74 75%, #b3a06a 80%, #c4af74 85%, #b3a06a 90%, #c4af74 95%); */
+
+    /* Gold & Blue */
+    background: radial-gradient(circle, rgba(255, 217, 0, 0.486), rgba(55, 132, 184, 0.815));
+    
+    /* Green */
+    /* background: radial-gradient(circle, #4a865c85, #4b8377); */
+
+}
+/* body::before {
+    background-image: url('../images/masjid_facade2.bmp');
+} */
+
+
+::-webkit-scrollbar-track { background: #344d5c; }
+::-webkit-scrollbar-thumb { background: #456170; }
+::-webkit-scrollbar-thumb:hover { background: #496f83; }
+
+header {
+    /* background-image: linear-gradient(to bottom, rgba(157, 194, 159, 0.404), rgba(157, 194, 159, 0)); */
+    /* background-image:linear-gradient(to bottom, rgba(130, 175, 142, 0.856), transparent); */
+    /* background-image:linear-gradient(to bottom, rgb(51, 51, 51), transparent); */
+    /* background-image: linear-gradient(to bottom, rgba(204, 186, 106, 0.664), rgba(157, 194, 159, 0)); */
+
+}
+
+.page-heading { background-image: radial-gradient(circle, #415e64c2, transparent); }
+
+article section {
+    background-color: #ffffff17;
+    box-shadow: 0px 0px 2px rgba(0, 90, 102, 0.185), 0px 1px 10px rgba(0, 60, 68, 0.116), 0px 1px 20px rgba(0, 63, 71, 0.068);
+}
+
+
+/* .hero { box-shadow: 0px 0px 30vh rgba(163, 206, 255, 0.575); } */
+
+.caption {
+    color: white;
+    background-color: transparent;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.178), transparent);
+}
+
+
+h1 { color: rgb(197, 229, 255) }
+h2 { color: rgb(253, 247, 215); }
+
+h3, h4, h5, h6 {
+    color: black;
+}
+
+blockquote, q { color: rgb(75, 75, 75);}
+a { color: rgb(0, 76, 168); }
+address { color: rgb(0, 84, 94); }
+
+#footer {
+    background-color: rgb(39, 54, 63);
+    color: rgba(241, 232, 219, 0.726);
+} #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
+    color: #fff4e5;
+}#footer a {
+    color: rgba(160, 218, 255, 0.596);
+}#footer address {
+    color: rgb(0, 141, 156);
+}
+
+
+.text-input {
+    border: 1px solid rgba(255, 245, 227, 0);
+    background-color: #6d9da7;
+    color: rgb(255, 245, 227);
+}
+
+.text-input::placeholder { color: rgba(255, 245, 227, 0.815); }
+.text-input:focus::placeholder { color: rgba(255, 245, 227, 0.411); }
+.text-input:focus { border: 1px solid rgba(255, 255, 255, 0.863); }
+
+
+
+.color-dark { color: rgb(69, 97, 112); /* color: #007889; */}
+
+.bg-dark { background-color: rgba(69, 97, 112, 0.795); /* color: #007889; */ }
+
+.bg-green-button {
+    /* background-color: rgba(174, 221, 176, 0.596); */
+    background-color: #6d9da7;
+}
+
+.bg-blue-button {
+    background-color: rgba(0, 104, 117, 0.589);
+}
+
+.button {
+    color: rgb(239, 229, 212);
+    box-shadow: #00000026 0px 0px 20px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.button:hover {
+    /* background-color: #007889; */
+    background-color: rgb(69, 97, 112);
+    border: 1px solid rgba(255, 245, 227, 0.863);
+    color: rgba(255, 245, 227, 0.863);
+}
+
+#navbar, #menu {
+    background-color: #415e64c2;
+    box-shadow: 0px 0px 2px rgba(0, 33, 48, 0.788), 0px 0px 5px rgba(49, 69, 80, 0.623), 0px 0px 15px rgba(49, 69, 80, 0.171);
+}
+
+.navbar-button,
+.menu-button,
+.btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+}
+
+.navbar-button {
+    border: 1px solid rgba(255, 245, 227, 0);
+}
+.navbar-button:hover {
+    border: 1px solid rgba(255, 245, 227, 0.863);
+    background-color: rgb(69, 97, 112);
+    color: rgba(255, 245, 227, 0.863);
+}
+
+.menu-button {
+    border: 1px solid rgba(255, 245, 227, 0);
+}
+
+.menu-button:hover,
+.navbar-button:hover {
+    border: 1px solid rgba(255, 245, 227, 0.863);
+    background-color: rgb(69, 97, 112);
+    color: rgb(255, 245, 227);
+}
+
+/* #donate { background-image: url('../images/masjid_facade2.bmp'); } */
+
+.donate-content {
+    
+    background-color: rgba(119, 119, 119, 0.26);
+    box-shadow: #0000003b 0px -5px 20px;
+}
+
+th,
+td {
+    background-color: #ffffff17;
+}
+
+#about-page td {
+    background-color: #ffffff00;
+}
+
+#sticky-donate-button {
+    background-color: rgba(255, 208, 0, 0);
+}
+
+#sticky-donate-button #paypal-image {
+    box-shadow: 0px 0px 15px rgba(255, 230, 0, 0.47);
+}
+
+/* Membership Page styles */
+.modal {
+    background-color: #3B3B3B;
+}
+
+#member-form {
+    background-color: #007889;
+}
+
+/* The Close Button */
+.closeBtn {
+    color: #ffffff;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.486);
+    background-color: rgba(255, 219, 219, 0);
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: rgb(255, 0, 0);
+    text-shadow: 0px 0px 5px rgb(255, 0, 0);
+}
+.btn-guestbook:hover {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.637);
+}
+#sign-guestbook {
+    background-image: url('../images/guestbook_signing.png');
+}
+#view-guestbook {
+    background-image: url('../images/guestbook.png');
+}
+#sign-guestbook,
+#view-guestbook,
+.content-w-bg {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px #000000dc, 0px 0px 15px #00000093, 0px 0px 35px #0000005d;
+}
+
+#programs-page li {
+    /* color: rgb(69, 97, 112); */
+}
+
+#audio-container {
+    /* background: radial-gradient(circle, #ffffff, #ffffff49); */
+    background-color: rgb(241, 243, 244);
+    border: 2px solid rgb(175, 149, 101);
+    /* background-color: #fffbe4; */
+    color: rgb(175, 149, 101);
+}
+#audio-container span {
+    color: rgb(0, 0, 0);
+}
+#audio-container span:hover {
+    color: red;
+    text-shadow: 0px 0px 5px red;
+}
+.audio-container button:hover {
+    background-color: #ccc;
+}
+
+.recording {
+    background-image: url(../images/playbutton_blur.png);
+}
+
+.recording:hover {
+    background-image: url(../images/playbutton.png);
+}
+
+button, .button, .btn {
+    border: 1px solid transparent;
+}
+/* MOBILE BROWSER STYLING ENDS - COLOR THEME STYLING ENDS */
+
+
+
+@media only screen and (min-width: 1280px) /* DESKTOP BROWSER STYLING - COLOR THEME STYLING */ {
+
+  #left-sidebar,
+  #right-sidebar {
+      border-color: rgba(255, 245, 227, 0);
+  }
+  
+  #left-sidebar button {
+     
+      background-color: rgba(21, 217, 243, 0);
+      border-color: rgba(255, 245, 227, 0);
+  }
+
+  #left-sidebar button:hover {
+      /* background-color: rgb(69, 97, 112); */
+      border-color: rgba(255, 245, 227, 0.863);
+  }
+
+  #navbar {
+      background-color: rgba(136, 196, 156, 0.788);
+      border-color: rgba(177, 162, 116, 0);
+  }
+
+  .navbar-button {
+      color: #fffae1;
+  }
+
+  #menu { background-color: rgba(156, 219, 170, 0.596); }
+
+  #sidebar {
+      background-color: rgba(136, 196, 156, 0.788);
+      border-color: rgba(177, 162, 116, 0);
+  }
+
+  
+  #right-sidebar section {
+      background-color: rgba(255, 255, 255, 0.144);
+      box-shadow: 0px 0px 2px rgba(0, 90, 102, 0.219), 0px 1px 10px rgba(0, 90, 102, 0.164), 1px 2px 20px rgba(0, 90, 102, 0.103);
+  }
+
+}/* DESKTOP BROWSER STYLING ENDS - COLOR THEME STYLING ENDS */
