@@ -11,7 +11,9 @@ body {
     /* background: linear-gradient(135deg, #b3a06a 1%, #c4af74 5%, #b3a06a 10%,  #c4af74 15%, #b3a06a 20%, #c4af74 25%, #b3a06a 30%, #c4af74 35%, #b3a06a 40%, #c4af74 45%, #b3a06a 50%, #c4af74 55%, #b3a06a 60%, #c4af74 65%, #b3a06a 70%, #c4af74 75%, #b3a06a 80%, #c4af74 85%, #b3a06a 90%, #c4af74 95%); */
 
     /* Gold & Blue */
-    background: radial-gradient(circle, rgba(255, 217, 0, 0.486), rgba(55, 132, 184, 0.815));
+
+    color: rgba(255, 255, 255, 0.808);
+    background: linear-gradient(to bottom, rgba(0, 113, 206, 0.815), rgb(201, 193, 146),  rgba(141, 0, 24, 0.781));
     
     /* Green */
     /* background: radial-gradient(circle, #4a865c85, #4b8377); */
@@ -22,9 +24,9 @@ body {
 } */
 
 
-::-webkit-scrollbar-track { background: #344d5c; }
-::-webkit-scrollbar-thumb { background: #456170; }
-::-webkit-scrollbar-thumb:hover { background: #496f83; }
+::-webkit-scrollbar-track { background: linear-gradient(to bottom, rgba(0, 113, 206, 0.815) , rgb(201, 193, 146) ); }
+::-webkit-scrollbar-thumb { background: rgba(97, 0, 16, 0.39); }
+::-webkit-scrollbar-thumb:hover { background: rgb(148, 0, 25); }
 
 header {
     /* background-image: linear-gradient(to bottom, rgba(157, 194, 159, 0.404), rgba(157, 194, 159, 0)); */
@@ -34,7 +36,7 @@ header {
 
 }
 
-.page-heading { background-image: radial-gradient(circle, #415e64c2, transparent); }
+.page-heading { background-image: radial-gradient(circle, rgba(255, 249, 229, 0.39) 50%, transparent 95%); }
 
 article section {
     background-color: #ffffff17;
@@ -51,16 +53,16 @@ article section {
 }
 
 
-h1 { color: rgb(197, 229, 255) }
+h1 { color: rgb(17, 129, 221) }
 h2 { color: rgb(253, 247, 215); }
 
 h3, h4, h5, h6 {
-    color: black;
+    color: white;
 }
 
-blockquote, q { color: rgb(75, 75, 75);}
-a { color: rgb(0, 76, 168); }
-address { color: rgb(0, 84, 94); }
+blockquote, q { color: rgb(255, 250, 227);}
+a { color: rgb(182, 215, 255); }
+address { color: rgb(201, 246, 252); }
 
 #footer {
     background-color: rgb(39, 54, 63);
@@ -76,13 +78,13 @@ address { color: rgb(0, 84, 94); }
 
 .text-input {
     border: 1px solid rgba(255, 245, 227, 0);
-    background-color: #6d9da7;
+    background-color: #00000018;
     color: rgb(255, 245, 227);
 }
 
 .text-input::placeholder { color: rgba(255, 245, 227, 0.815); }
 .text-input:focus::placeholder { color: rgba(255, 245, 227, 0.411); }
-.text-input:focus { border: 1px solid rgba(255, 255, 255, 0.863); }
+.text-input:focus { background-color: #0000001f; }
 
 
 
@@ -92,11 +94,11 @@ address { color: rgb(0, 84, 94); }
 
 .bg-green-button {
     /* background-color: rgba(174, 221, 176, 0.596); */
-    background-color: #6d9da7;
+    background-color: #6d90a7;
 }
 
 .bg-blue-button {
-    background-color: rgba(0, 104, 117, 0.589);
+    background-color: rgba(0, 70, 117, 0.589);
 }
 
 .button {
@@ -107,14 +109,14 @@ address { color: rgb(0, 84, 94); }
 
 .button:hover {
     /* background-color: #007889; */
-    background-color: rgb(69, 97, 112);
+    background-color: rgb(69, 91, 112);
     border: 1px solid rgba(255, 245, 227, 0.863);
     color: rgba(255, 245, 227, 0.863);
 }
 
 #navbar, #menu {
-    background-color: #415e64c2;
-    box-shadow: 0px 0px 2px rgba(0, 33, 48, 0.788), 0px 0px 5px rgba(49, 69, 80, 0.623), 0px 0px 15px rgba(49, 69, 80, 0.171);
+    background: radial-gradient(circle, rgba(0, 57, 110, 0.726), rgba(0, 57, 110, 0.459) );
+    box-shadow: 0px 0px 5px rgba(49, 69, 80, 0.623), 0px 0px 15px rgba(49, 69, 80, 0.171);
 }
 
 .navbar-button,
@@ -130,7 +132,7 @@ address { color: rgb(0, 84, 94); }
 }
 .navbar-button:hover {
     border: 1px solid rgba(255, 245, 227, 0.863);
-    background-color: rgb(69, 97, 112);
+    background-color: rgba(0, 57, 110, 0.726);
     color: rgba(255, 245, 227, 0.863);
 }
 
@@ -141,7 +143,7 @@ address { color: rgb(0, 84, 94); }
 .menu-button:hover,
 .navbar-button:hover {
     border: 1px solid rgba(255, 245, 227, 0.863);
-    background-color: rgb(69, 97, 112);
+    background-color: rgba(0, 57, 110, 0.726);
     color: rgb(255, 245, 227);
 }
 
@@ -155,6 +157,7 @@ address { color: rgb(0, 84, 94); }
 
 th,
 td {
+    color: white;
     background-color: #ffffff17;
 }
 
@@ -252,7 +255,7 @@ button, .button, .btn {
   }
   
   #left-sidebar button {
-     
+    color: rgba(255, 255, 255, 0.836);
       background-color: rgba(21, 217, 243, 0);
       border-color: rgba(255, 245, 227, 0);
   }
