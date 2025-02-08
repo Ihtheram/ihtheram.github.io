@@ -303,7 +303,7 @@ q {
 
     width: 100%;
     margin: 0;
-    /* margin-bottom: 15px; */
+    margin-bottom: 2px;
     padding: 15px;
 
     -webkit-backdrop-filter: blur(5px);

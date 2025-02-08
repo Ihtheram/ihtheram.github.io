@@ -12,7 +12,8 @@ body {
 
     /* Gold & Blue */
 
-    color: rgba(255, 255, 255, 0.808);
+    color: rgba(255, 245, 217, 0.918);
+
     background: linear-gradient(to bottom, rgb(0, 79, 144) 1%, rgba(0, 113, 206, 0.815) 5%, rgb(201, 193, 146) 50%,  rgb(82, 0, 14) 90% );
     
     /* Green */
@@ -39,7 +40,7 @@ header {
 .page-heading { background-image: radial-gradient(circle, rgba(255, 249, 229, 0.39) 50%, transparent 95%); }
 
 article section {
-    background-color: #ffffff17;
+    background-color: rgba(255, 255, 255, 0.144);
     box-shadow: 0px 0px 2px rgba(0, 90, 102, 0.185), 0px 1px 10px rgba(0, 60, 68, 0.116), 0px 1px 20px rgba(0, 63, 71, 0.068);
 }
 
@@ -53,15 +54,17 @@ article section {
 }
 
 
-h1 { color: rgb(17, 129, 221) }
-h2 { color: rgb(253, 247, 215); }
+h1 {  color: rgb(255, 251, 238);  text-shadow: 0px 0px 10px rgba(255, 239, 196, 0.089); }
+h2 { color: rgb(255, 240, 197); text-shadow:0px 0px 5px rgba(128, 128, 128, 0.158); }
 
 h3, h4, h5, h6 {
-    color: white;
+    color: rgb(255, 246, 222);
 }
 
+p, li, dt, dd, th, td { color: rgba(255, 245, 217, 0.918); }
+
 blockquote, q { color: rgb(255, 250, 227);}
-a { color: rgb(182, 215, 255); }
+a { color: default; }
 address { color: rgb(201, 246, 252); }
 
 #footer {
@@ -126,28 +129,16 @@ address { color: rgb(201, 246, 252); }
 .menu-button,
 .btn {
     background-color: transparent;
-    color: white;
-    border: 1px solid rgba(0, 0, 0, 0.103);
-}
-
-.navbar-button {
-    border: 1px solid rgba(255, 245, 227, 0);
-}
-.navbar-button:hover {
-    border: 1px solid rgba(255, 245, 227, 0.863);
-    background-color: rgba(0, 57, 110, 0.726);
-    color: rgba(255, 245, 227, 0.863);
-}
-
-.menu-button {
+    color: rgba(250, 231, 178, 0.801);
     border: 1px solid rgba(255, 245, 227, 0);
 }
 
 .menu-button:hover,
 .navbar-button:hover {
-    border: 1px solid rgba(255, 245, 227, 0.863);
     background-color: rgba(0, 57, 110, 0.726);
-    color: rgb(255, 245, 227);
+    color: rgb(253, 237, 193);
+    border: 1px solid rgb(250, 231, 178);
+
 }
 
 /* #donate { background-image: url('../images/masjid_facade2.bmp'); } */
@@ -160,7 +151,6 @@ address { color: rgb(201, 246, 252); }
 
 th,
 td {
-    color: white;
     background-color: #ffffff17;
 }
 
@@ -252,20 +242,25 @@ button, .button, .btn {
 
 @media only screen and (min-width: 1280px) /* DESKTOP BROWSER STYLING - COLOR THEME STYLING */ {
 
+article section { background-color: rgba(0, 108, 197, 0.164); }
+
   #left-sidebar,
   #right-sidebar {
       border-color: rgba(255, 245, 227, 0);
   }
   
   #left-sidebar button {
-    color: rgba(255, 255, 255, 0.836);
+    color: rgb(250, 231, 178);
       background-color: rgba(21, 217, 243, 0);
       border-color: rgba(255, 245, 227, 0);
   }
 
   #left-sidebar button:hover {
-      /* background-color: rgb(69, 97, 112); */
-      border-color: rgba(255, 245, 227, 0.863);
+    background-color: rgba(75, 55, 0, 0.048);
+      color: rgb(255, 249, 232);
+      border-color: rgb(255, 249, 232);
+      text-shadow: 10px 0px 15px rgba(250, 231, 178, 0.384);
+      /* box-shadow: 0px 0px 15px rgba(68, 50, 0, 0.26); */
   }
 
   #navbar {
